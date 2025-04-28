@@ -59,11 +59,3 @@ Service	-> Web server down, misconfigured binding to 127.0.0.1
 
 ```
 
-### 4. Solutions Applied
-```
-Problem	                        Confirmation	                Fix
-DNS wrong server	       cat /etc/resolv.conf	  Updated to correct DNS IP
-Service not listening	        ss -tuln	      Updated server config and restarted web service
-Firewall blocking        	sudo ufw              status	Allowed ports 80/443
-
-```
